@@ -25,10 +25,10 @@ WORKDIR /var/www/html
 COPY . .
 
 # Instalar dependencias de Composer
-RUN composer install
+# RUN composer install
 
 # Exponer el puerto 8000 para el servidor de desarrollo
-EXPOSE 8000
+EXPOSE 8000 
+ 
 
-# Comando para iniciar el servidor de desarrollo de Laravel
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+CMD ["tail", "-f", "/dev/null"]

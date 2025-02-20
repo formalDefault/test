@@ -24,7 +24,7 @@ Route::get('/cocina/api/registros', [CocinaController::class, 'obtenerRegistros'
 Route::get('/cocina/api/buscar', [CocinaController::class, 'buscarEmpleado']);
 
 // Rutas para editar
-Route::get('/admin/empleados/edit', [EmpleadoAuthController::class, 'mostrarEdicion'])->name('admin.empleados.edit');
+Route::get('/admin/empleados/edit/{id}', [EmpleadoAuthController::class, 'showEdit'])->name('admin.empleados.edit');
 Route::get('/admin/empleados/{id}/formulario-editar', [EmpleadoAuthController::class, 'formularioEditar'])->name('admin.empleados.formulario');
 Route::post('/admin/empleados/{id}/actualizar', [EmpleadoAuthController::class, 'actualizar'])->name('admin.empleados.actualizar');
 

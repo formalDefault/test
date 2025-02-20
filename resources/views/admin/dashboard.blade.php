@@ -40,7 +40,7 @@
         <h4 class="text-center">Admin</h4>
         <a href="#" onclick="mostrarSeccion('empleados')">Gestionar Empleados</a>
         <a href="#" onclick="mostrarSeccion('empleados/create')">Agregar Empleado</a>
-        <a href="#" onclick="mostrarSeccion('empleados/edit')">Editar</a>
+        <!-- <a href="#" onclick="mostrarSeccion('empleados/edit')">Editar</a> -->
         <a href="#" onclick="mostrarSeccion('empleados/reportes')">Reportes</a>
 
         <form action="{{ route('admin.logout') }}" method="POST" class="text-center mt-3">

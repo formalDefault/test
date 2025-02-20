@@ -28,10 +28,10 @@ class EmpleadoAuthController extends Controller
         return view('admin.empleados.index', compact('empleados'));
     }
 
-    public function mostrarEdicion()
-    {
-        $empleados = Empleado::all();
-        return view('admin.empleados.edit', compact('empleados'));
+    public function showEdit($id)
+    {     
+        $employee = Empleado::findOrFail($id);
+        return view('admin.empleados.edit', compact('employee'));  
     }
 
     // Mostrar formulario para editar un empleado específico

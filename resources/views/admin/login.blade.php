@@ -8,7 +8,7 @@
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
     <div class="card p-4" style="width: 350px;">
-    <img src="{{ asset('images/LogoExp.png') }}" alt="Expoalimentos" class="logo">
+    <img src="{{ asset('images/LogoExpa.png') }}" alt="Expoalimentos" class="logo">
         <h3 class="text-center">Admin Login</h3>
         <form action="{{ route('admin.login.post') }}" method="POST">
             @csrf
